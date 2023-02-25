@@ -1,0 +1,151 @@
+.about__ach{
+    margin-top: 1.5rem;
+}
+.about__ach-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+}
+.about__ach-left{
+    margin-top: 5rem;
+}
+.about__ach-right{
+    margin-top: 3rem;
+}
+.about__ach-right p{
+    margin: 1.6rem 0 2.5rem;
+}
+.ach__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.ach__card{
+    background: var(--color-bg1);
+    padding: 1rem ;
+    border-radius: 1rem;
+    text-align: center;
+}
+.ach__card:hover{
+    background:var(--color-bg2);
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+}
+.ach__icon{
+    background: var(--color-warning);
+    padding: 0 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.ach__cards .ach__card:nth-child(2) .ach__icon{
+    background: var(--color-success);
+}
+.ach__cards .ach__card:nth-child(3) .ach__icon{
+    background: var(--color-danger);
+}
+.ach__card p{
+    margin-top: 1rem;
+}
+
+/* team members styling */
+.team{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.4);
+}
+.team__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.team__mbr{
+    background: var(--color-bg2);
+    padding: 1.2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.team__mbr:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    transition: var(--transition);
+    filter: saturate(1);
+}
+.mbr__image img{
+    filter: saturate(0);
+}
+/* hover effect for image saturation by targeting card(article tag) */
+.team__mbr:hover img{
+    filter: saturate(1);
+    transition: var(--transition);
+}
+.mbr__info{
+    text-align: center;
+    margin-top: 2rem;
+}
+.mbr__socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.4);
+}
+.team__mbr:hover .mbr__socials{
+    right: 0%;
+    transition: var(--transition);
+}
+.mbr__socials a{
+    padding: 1rem;
+}
+
+/* Responsive Design for the About page */
+@media screen and (max-width:1024px) {
+    /* ach section */
+    .about__ach{
+        margin-top: 2rem;
+    }
+    .about__ach-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about__ach-left{
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* team section */
+    .team__container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem ;
+    }
+    .team__mbr{
+        padding: 0.9rem;
+    }
+
+}
+@media screen and (max-width:600px) {
+        /* ach section */
+    .ach__cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.5rem;
+    }
+    .ach__card{
+        padding: 0.7rem;
+        width: 90%;
+    }
+        /* team section */
+    .team__container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.7rem ;
+    }
+    .team__mbr{
+        padding: 0rem;
+        width: 95%;
+    }
+    .team__mbr p{
+        margin-bottom: 1.5rem;
+    }
+}

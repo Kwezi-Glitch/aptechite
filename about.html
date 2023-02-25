@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respnsive Multipage Education Website Using HTML, CSS & Js</title>
+
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/b96618be8f.js" crossorigin="anonymous"></script>
+
+    <!--google font api-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- about css -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- adding background texture -->
+    <style>
+        body{
+            background-image: url("images/texture.png");
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>APTECH</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+            <button id="open-menu"><i class="fa-solid fa-align-center"></i></i></button>
+            <button id="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <!--achievement section-->
+    <section class="about_ach">
+        <div class="container about__ach-container">
+            <div class="about__ach-left">
+                <img src="/images/header.png" alt="">
+            </div>
+            <div class="about__ach-right">
+                <h1>Achievements</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur harum laboriosam possimus? Quae eveniet cupiditate ad sed, cum nesciunt.</p>
+                <div class="ach__cards">
+                    <article class="ach__card">
+                        <span class="ach__icon"><i class="fa-solid fa-video"></i></span>
+                        <h3>450+</h3>
+                        <p>Courses</p>
+                    </article>
+                    <article class="ach__card">
+                        <span class="ach__icon"><i class="fa-solid fa-users"></i></span>
+                        <h3>3000+</h3>
+                        <p>Students</p>
+                    </article>
+                    <article class="ach__card">
+                        <span class="ach__icon"><i class="fa-solid fa-award"></i></span>
+                        <h3>29+</h3>
+                        <p>Awards</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Team members section-->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="container team__container">
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm4.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Joe Mans</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm2.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Nedaska Mambo</h4>
+                    <p>Web Developer</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm3.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Charlotte Asiimire</h4>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm6.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Salim Kabaka</h4>
+                    <p>Administrator</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm7.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Amber Rose</h4>
+                    <p>Computer Scientist</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm8.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>King Kunta</h4>
+                    <p>Accountant</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm9.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Ari Tulko</h4>
+                    <p>Registrar</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team__mbr">
+                <div class="mbr__image">
+                    <img src="/images/tm10.jpg" alt="">
+                </div>
+                <div class="mbr__info">
+                    <h4>Joy Mwesiigwa</h4>
+                    <p>Head Cleaner</p>
+                </div>
+                <div class="mbr__socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!--footer section-->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>APTECH</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, id.</p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+245 701 555 555</p>
+                    <p>headoffice@aptech.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; 2010-2023 APTECH / ISBAT </small> <br>
+            <small> GLITCH-TECH&reg; </small>
+        </div>
+    </footer>
+
+    <!--main js file link-->
+    <script src="/main.js"></script>
+</body>
+
+</html>
